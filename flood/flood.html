@@ -1,68 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flood Evacuation Guide</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            text-align: center;
-            color: #007bff;
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        .emergency-banner {
-            background-color: #f8d7da;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-        }
-
-        .emergency-banner h2 {
-            color: red;
-        }
-
-        .checklist {
-            list-style: disc;
-            padding-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        .checklist li {
-            margin-bottom: 10px;
-        }
-
-        .important {
-            font-weight: bold;
-            color: #e84118; /* Reddish color for important items */
-        }
-
-        .resources {
-            border-top: 1px solid #ddd;
-            padding-top: 10px;
-            margin-top: 20px;
-        }
-
-        .resources a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        .resources a:hover { /* Add hover effect for links */
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="flood.css" rel="stylesheet" type="text/css" />
+  <title>Flood</title>
 </head>
 <body>
+  <script src="../script.js"></script>
+  <header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+        <h2 onclick="calpol()">Police - 100</h2>
+        <h2 onclick="calfire()">Fire - 101</h2>
+        <h2 onclick="calamb()">Ambulance - 102</h2>
+        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+      </div>
+    </div>
+    <div class="back">
+      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
+    </div>
+    <div class="header">
+      <h1><span>Flood!</span></h1>
+    </div>
+    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
+        alt="Emergency" width="50" height="50"></span>
+  </header>
+  <main>
+    <div class="image_holder">
+      </div>
+    <section class="main">
     <h1>Flood Evacuation Guide</h1>
 
     <div class="emergency-banner">
@@ -108,3 +78,10 @@
         <ul>
             <li><a href="https://www.ready.gov/floods">Ready.gov: Floods</a></li>
             <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">American Red Cross: Flood Safety</a></li>
+            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">National Red Cross: Flood Safety</a></li>
+        </ul>
+    </div>
+    </section>
+  </main>
+</body>
+</html>
