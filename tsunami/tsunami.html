@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../img_assets/logo.png" type="image/icon type">
@@ -11,80 +12,95 @@
   <link href="tsunami.css" rel="stylesheet" type="text/css" />
   <title>Tsunami</title>
 </head>
-<body>
+
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+        </div>
       </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Tsunami!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
       </div>
-    <section class="main">
-    <h1>Tsunami Evacuation Guide</h1>
+      <div class="header">
+        <h1><span>Tsunami!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
+        <h1>Tsunami Evacuation Guide</h1>
 
-    <div class="emergency-banner">
-        <h2>**Attention! Tsunami Warning in Effect!**</h2>
-        <p>A tsunami may be approaching your area. Evacuate to higher ground immediately.</p>
-    </div>
+        <div class="emergency-banner">
+          <h2>**Attention! Tsunami Warning in Effect!**</h2>
+          <p>A tsunami may be approaching your area. Evacuate to higher ground immediately.</p>
+        </div>
 
-    <h2>What to Do Now</h2>
-    <ul class="checklist">
-        <li>**Evacuate Immediately:** Head for higher ground as quickly and safely as possible. Aim for at least 100 feet (30 meters) above sea level.</li>
-        <li>**Follow Instructions:** Listen to local authorities and emergency broadcasts for evacuation routes and instructions.</li>
-        <li>**Leave Belongings:** Do not waste time gathering belongings. Your life is more important.</li>
-        <li>**Help Others:** If time allows, assist those who may need help evacuating, particularly children, elderly, or disabled individuals.</li>
-    </ul>
-
-    <h2>What to Take (If Possible)</h2>
-    <ul class="checklist">
-        <li>**Essentials:**  
-            <ul>
-                <li>Identification documents (ID, passport, etc.)</li>
-                <li>Medications (enough for at least 3 days)</li>
-                <li>Cash and credit cards</li>
-                <li>Cell phone and charger (portable charger if possible)</li>
-            </ul>
-        </li>
-        <li>**Sturdy Shoes and Waterproof Boots:** For safe travel on uneven or wet terrain.</li>
-        <li>**First-aid Kit:** To address any minor injuries.</li>
-        <li>**Flashlight and Batteries:** In case of power outages.</li>
-    </ul>
-
-    <h2>Important Information</h2>
-    <ul>
-        <li>Do not go to the beach to watch a tsunami.</li>
-        <li>Tsunamis can strike quickly after an earthquake. If you feel a strong earthquake, evacuate immediately.</li>
-        <li>Stay away from flooded areas. Tsunami waves can surge inland and may contain debris.</li>
-        <li>Do not return home until authorities say it is safe.</li>
-    </ul>
-
-    <h2>Additional Resources</h2>
-    <div class="resources">
-        <p>For more information and resources, please visit:</p>
-        <ul>
-            <li><a href="https://www.ready.gov/tsunamis">Ready.gov: Tsunamis</a> - U.S. Department of Transportation</li>
-            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-a-tsunami/tsunami-safety-preparedness.html">Red Cross Tsunami Safety Preparedness</a> - Red Cross</li>
-            <li><a href="https://www.seismology.org/seismology/seismology-basics/tsunami-safety-preparedness.html">Seismology Tsunami Safety Preparedness</a> - Seismology</li>
+        <h2>What to Do Now</h2>
+        <ul class="checklist">
+          <li>**Evacuate Immediately:** Head for higher ground as quickly and safely as possible. Aim for at least 100
+            feet (30 meters) above sea level.</li>
+          <li>**Follow Instructions:** Listen to local authorities and emergency broadcasts for evacuation routes and
+            instructions.</li>
+          <li>**Leave Belongings:** Do not waste time gathering belongings. Your life is more important.</li>
+          <li>**Help Others:** If time allows, assist those who may need help evacuating, particularly children,
+            elderly, or disabled individuals.</li>
         </ul>
-    </div>
-    </section>
-  </main>
+
+        <h2>What to Take (If Possible)</h2>
+        <ul class="checklist">
+          <li>**Essentials:**
+            <ul>
+              <li>Identification documents (ID, passport, etc.)</li>
+              <li>Medications (enough for at least 3 days)</li>
+              <li>Cash and credit cards</li>
+              <li>Cell phone and charger (portable charger if possible)</li>
+            </ul>
+          </li>
+          <li>**Sturdy Shoes and Waterproof Boots:** For safe travel on uneven or wet terrain.</li>
+          <li>**First-aid Kit:** To address any minor injuries.</li>
+          <li>**Flashlight and Batteries:** In case of power outages.</li>
+        </ul>
+
+        <h2>Important Information</h2>
+        <ul>
+          <li>Do not go to the beach to watch a tsunami.</li>
+          <li>Tsunamis can strike quickly after an earthquake. If you feel a strong earthquake, evacuate immediately.
+          </li>
+          <li>Stay away from flooded areas. Tsunami waves can surge inland and may contain debris.</li>
+          <li>Do not return home until authorities say it is safe.</li>
+        </ul>
+
+        <h2>Additional Resources</h2>
+        <div class="resources">
+          <p>For more information and resources, please visit:</p>
+          <ul>
+            <li><a href="https://www.ready.gov/tsunamis">Ready.gov: Tsunamis</a> - U.S. Department of Transportation
+            </li>
+            <li><a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-a-tsunami/tsunami-safety-preparedness.html">Red
+                Cross Tsunami Safety Preparedness</a> - Red Cross</li>
+            <li><a
+                href="https://www.seismology.org/seismology/seismology-basics/tsunami-safety-preparedness.html">Seismology
+                Tsunami Safety Preparedness</a> - Seismology</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

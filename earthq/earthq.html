@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../img_assets/logo.png" type="image/icon type">
@@ -11,77 +12,100 @@
   <link href="earthq.css" rel="stylesheet" type="text/css" />
   <title>Earthquake</title>
 </head>
-<body>
+
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+        </div>
       </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Earthquake!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
       </div>
-    <section class="main">
+      <div class="header">
+        <h1><span>Earthquake!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
 
-<!-- Add Content here-------------------------------------- -->
-      <h1>Earthquake Preparedness Guide</h1>
+        <!-- Add Content here-------------------------------------- -->
+        <h1>Earthquake Preparedness Guide</h1>
 
-      <div class="emergency-banner">
+        <div class="emergency-banner">
           <h2>Be Prepared! Earthquakes Can Happen Anytime.</h2>
           <p>Take steps now to protect yourself and your loved ones during an earthquake.</p>
-      </div>
+        </div>
 
-      <h2>Before an Earthquake</h2>
-      <ul class="checklist">
-          <li><b>Create a Home Earthquake Plan:</b> Discuss earthquake safety procedures with your family and practice dropping, covering, and holding on.</li>
-          <li><b>Secure Heavy Objects:</b> Anchor furniture, bookcases, and other heavy objects to walls to prevent them from falling.</li>
-          <li><b>Assemble an Emergency Kit:</b> Prepare a kit with essentials like food, water, first-aid supplies, flashlight, and radio.  Consider including a whistle to signal for help and a dust mask for dust after the earthquake.</li>
-          <li><b>Identify Safe Zones:</b> Locate safe areas under sturdy furniture or doorways away from windows and hanging objects.</li>
-          <li><b>Learn to Shut Off Utilities:</b> Know how to turn off gas, water, and electricity in case of damage.</li>
-      </ul>
+        <h2>Before an Earthquake</h2>
+        <ul class="checklist">
+          <li><b>Create a Home Earthquake Plan:</b> Discuss earthquake safety procedures with your family and practice
+            dropping, covering, and holding on.</li>
+          <li><b>Secure Heavy Objects:</b> Anchor furniture, bookcases, and other heavy objects to walls to prevent them
+            from falling.</li>
+          <li><b>Assemble an Emergency Kit:</b> Prepare a kit with essentials like food, water, first-aid supplies,
+            flashlight, and radio. Consider including a whistle to signal for help and a dust mask for dust after the
+            earthquake.</li>
+          <li><b>Identify Safe Zones:</b> Locate safe areas under sturdy furniture or doorways away from windows and
+            hanging objects.</li>
+          <li><b>Learn to Shut Off Utilities:</b> Know how to turn off gas, water, and electricity in case of damage.
+          </li>
+        </ul>
 
-      <h2>During an Earthquake</h2>
-      <ul class="checklist">
-          <li><b>Drop, Cover, and Hold On:</b> If you feel the ground shaking, drop to the ground immediately, take cover under a sturdy object, and hold on until the shaking stops.</li>
+        <h2>During an Earthquake</h2>
+        <ul class="checklist">
+          <li><b>Drop, Cover, and Hold On:</b> If you feel the ground shaking, drop to the ground immediately, take
+            cover under a sturdy object, and hold on until the shaking stops.</li>
           <li><b>Stay Indoors:</b> If you are indoors, stay inside and stay away from windows and outside walls.</li>
-          <li><b>Move Away from Furniture:</b> If you are unable to get under something sturdy, move away from furniture that could fall on you.</li>
-          <li><b>Do Not Use Elevators:</b> Take stairs if possible, elevators may not function during or after an earthquake.</li>
-      </ul>
+          <li><b>Move Away from Furniture:</b> If you are unable to get under something sturdy, move away from furniture
+            that could fall on you.</li>
+          <li><b>Do Not Use Elevators:</b> Take stairs if possible, elevators may not function during or after an
+            earthquake.</li>
+        </ul>
 
-      <h2>After an Earthquake</h2>
-      <ul class="checklist">
+        <h2>After an Earthquake</h2>
+        <ul class="checklist">
           <li><b>Check for Injuries:</b> Attend to yourself and others who may be injured.</li>
-          <li><b>Be Aware of Aftershocks:</b> Expect aftershocks, which can be smaller earthquakes that follow the main quake.</li>
-          <li><b>Listen to Authorities:</b> Follow instructions from emergency personnel and stay informed about the situation.</li>
-          <li><b>Check for Damage:</b> Assess the damage to your home and surroundings. Do not enter a building if you are unsure of the damage.</li>
+          <li><b>Be Aware of Aftershocks:</b> Expect aftershocks, which can be smaller earthquakes that follow the main
+            quake.</li>
+          <li><b>Listen to Authorities:</b> Follow instructions from emergency personnel and stay informed about the
+            situation.</li>
+          <li><b>Check for Damage:</b> Assess the damage to your home and surroundings. Do not enter a building if you
+            are unsure of the damage.</li>
           <li><b>Call for Help:</b> If you are in a building, call for help immediately.</li>
-      </ul>
-      <h2>Additional Resources</h2>
-      <div class="resources">
+        </ul>
+        <h2>Additional Resources</h2>
+        <div class="resources">
           <p>For more information and resources, please visit:</p>
           <ul>
-              <li><a href="https://www.usgs.gov/programs/earthquake-hazards/earthquake-safety-preparedness">USGS Earthquake Safety Preparedness</a> - U.S. Geological Survey</li>
-              <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-an-earthquake/earthquake-safety-preparedness.html">Red Cross Earthquake Safety Preparedness</a> - Red Cross</li>
-              <li><a href="https://www.seismology.org/seismology/seismology-basics/earthquake-safety-preparedness.html">Seismology Earthquake Safety Preparedness</a> - Seismology</li>
+            <li><a href="https://www.usgs.gov/programs/earthquake-hazards/earthquake-safety-preparedness">USGS
+                Earthquake Safety Preparedness</a> - U.S. Geological Survey</li>
+            <li><a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-an-earthquake/earthquake-safety-preparedness.html">Red
+                Cross Earthquake Safety Preparedness</a> - Red Cross</li>
+            <li><a
+                href="https://www.seismology.org/seismology/seismology-basics/earthquake-safety-preparedness.html">Seismology
+                Earthquake Safety Preparedness</a> - Seismology</li>
           </ul>
-      </div>
+        </div>
 
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

@@ -58,6 +58,61 @@ body {
   color: var(--textcolor);
 }
 
+
+
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #ae33db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#html{
+  display: none;
+}
+
+
+
+
 .overlay {
   height: 0%;
   width: 100%;
@@ -131,10 +186,10 @@ body {
   border-radius: 100%; 
   width: 45px; 
   height: 45px; 
-  animation: spinloader 2s linear infinite; 
+  animation: alerter 2s linear infinite; 
 }
 
-@keyframes spinloader{
+@keyframes alerter{
   0%{
     border: none;
   }
@@ -176,7 +231,7 @@ section {
 
 .emergency_holder {
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
@@ -199,7 +254,7 @@ section {
 
 .emergency_card:hover {
   cursor: pointer;
-  box-shadow: 0 30px 15px #2a2828;
+  box-shadow: 0 10px 15px #000000;
   transform: scale(1.03);
 }
 
@@ -523,7 +578,7 @@ ul:hover {
 
 .pandemic_card:hover {
   cursor: pointer;
-  box-shadow: 0 30px 15px #2a2828;
+  box-shadow: 0 10px 15px #000000;
   transform: scale(1.03);
 }
 

@@ -13,86 +13,94 @@
   <title>Fire</title>
 </head>
 
-<body>
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+        </div>
       </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
-        style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Fire!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
-        src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
-    </div>
-    <section class="main">
-
-      <!-- Add Content here-------------------------------------- -->
-
-      <h1>Fire Safety and Preparedness Guide: Be Ready to React!</h1>
-
-      <div class="emergency-banner">
-        <h2>**Know Your Risks! Be Prepared for a Fire!**</h2>
-        <p>A fire can happen quickly. This guide helps you be prepared to prevent fires and react safely if one occurs.
-        </p>
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
       </div>
+      <div class="header">
+        <h1><span>Fire!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
 
-      <h2>Fire Prevention Tips</h2>
-      <ul>
-        <li>**Smoke Alarms:** Install smoke alarms on every level of your home and outside sleeping areas. Test them
-          monthly and replace batteries annually.</li>
-        <li>**Fire Escape Plan:** Develop a fire escape plan with your family and practice it regularly. Identify two
-          escape routes from each room.</li>
-        <li>**Cooking Safety:** Stay in the kitchen while cooking and never leave unattended food on the stove. Clean
-          grease spills immediately.</li>
-        <li>**Electrical Safety:** Avoid overloading electrical outlets and use surge protectors for electronics. Don't
-          leave phone chargers plugged in for extended periods.</li>
-        <li>**Flammable Materials:** Store flammable liquids and chemicals safely away from heat sources. Keep flammable
-          materials like matches and lighters out of reach of children.</li>
-        <li>**Heating Safety:** Have your heating system inspected and serviced regularly. Keep flammable materials away
-          from heaters and fireplaces.</li>
-      </ul>
+        <!-- Add Content here-------------------------------------- -->
 
-      <h2>In Case of Fire</h2>
-      <ul>
-        <li>**Activate the Alarm:** If the smoke alarm sounds, evacuate immediately. Don't waste time investigating.
-        </li>
-        <li>**Get Out Safely:** Follow your pre-planned escape route. Feel doors before opening them. If hot, use your
-          alternate escape route.</li>
-        <li>**Close Doors Behind You:** Close doors behind you as you evacuate to slow the spread of fire and smoke.
-        </li>
-        <li>**Meet at Designated Location:** Once outside, meet at your designated meeting place away from the burning
-          building.</li>
-        <li>**Call 911:** Once everyone is safely out, call 911 or your local emergency number from a safe location.
-        </li>
-        <li>**Never Re-enter a Burning Building:** Do not go back inside for any reason. Wait for firefighters to
-          arrive.</li>
-      </ul>
+        <h1>Fire Safety and Preparedness Guide: Be Ready to React!</h1>
 
-      <h2>Additional Resources</h2>
-      <div class="resources">
-        <p>For more information and resources, please visit:</p>
+        <div class="emergency-banner">
+          <h2>**Know Your Risks! Be Prepared for a Fire!**</h2>
+          <p>A fire can happen quickly. This guide helps you be prepared to prevent fires and react safely if one
+            occurs.
+          </p>
+        </div>
+
+        <h2>Fire Prevention Tips</h2>
         <ul>
-          <li><a style="color:orangered" href="https://www.fire.ca.gov/emergency/fire-safety-and-preparedness-guide" target="_blank">Fire
-              Safety and Preparedness Guide</a></li>
+          <li>**Smoke Alarms:** Install smoke alarms on every level of your home and outside sleeping areas. Test them
+            monthly and replace batteries annually.</li>
+          <li>**Fire Escape Plan:** Develop a fire escape plan with your family and practice it regularly. Identify two
+            escape routes from each room.</li>
+          <li>**Cooking Safety:** Stay in the kitchen while cooking and never leave unattended food on the stove. Clean
+            grease spills immediately.</li>
+          <li>**Electrical Safety:** Avoid overloading electrical outlets and use surge protectors for electronics.
+            Don't
+            leave phone chargers plugged in for extended periods.</li>
+          <li>**Flammable Materials:** Store flammable liquids and chemicals safely away from heat sources. Keep
+            flammable
+            materials like matches and lighters out of reach of children.</li>
+          <li>**Heating Safety:** Have your heating system inspected and serviced regularly. Keep flammable materials
+            away
+            from heaters and fireplaces.</li>
         </ul>
-      </div>
-    </section>
-  </main>
+
+        <h2>In Case of Fire</h2>
+        <ul>
+          <li>**Activate the Alarm:** If the smoke alarm sounds, evacuate immediately. Don't waste time investigating.
+          </li>
+          <li>**Get Out Safely:** Follow your pre-planned escape route. Feel doors before opening them. If hot, use your
+            alternate escape route.</li>
+          <li>**Close Doors Behind You:** Close doors behind you as you evacuate to slow the spread of fire and smoke.
+          </li>
+          <li>**Meet at Designated Location:** Once outside, meet at your designated meeting place away from the burning
+            building.</li>
+          <li>**Call 911:** Once everyone is safely out, call 911 or your local emergency number from a safe location.
+          </li>
+          <li>**Never Re-enter a Burning Building:** Do not go back inside for any reason. Wait for firefighters to
+            arrive.</li>
+        </ul>
+
+        <h2>Additional Resources</h2>
+        <div class="resources">
+          <p>For more information and resources, please visit:</p>
+          <ul>
+            <li><a style="color:orangered" href="https://www.fire.ca.gov/emergency/fire-safety-and-preparedness-guide"
+                target="_blank">Fire
+                Safety and Preparedness Guide</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../img_assets/logo.png" type="image/icon type">
@@ -11,79 +12,102 @@
   <link href="landslide.css" rel="stylesheet" type="text/css" />
   <title>Landslides</title>
 </head>
-<body>
+
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
-      </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Landslides!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
-      </div>
-    <section class="main">
-
-<!-- Add Content here-------------------------------------- -->
-
-      <body>
-        <h1>Landslide Preparedness Guide: Be Ready to Move!</h1>
-
-        <div class="emergency-banner">
-            <h2>**Know Your Risk! Be Prepared for Landslides!**</h2>
-            <p>Heavy rains, earthquakes, or volcanic eruptions can trigger landslides. This guide helps you prepare and take action to protect yourself and your family.</p>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
         </div>
+      </div>
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
+      </div>
+      <div class="header">
+        <h1><span>Landslides!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
 
-        <h2>Before a Landslide</h2>
-        <ul>
-            <li>**Know Your Risk:** Identify if you live in an area prone to landslides. Check with your local authorities or a hazard map.</li>
-            <li>**Develop an Evacuation Plan:** Discuss escape routes and meeting locations with your family. Identify potential shelters.</li>
-            <li>**Prepare an Emergency Kit:** Assemble an emergency kit with non-perishable food (enough for at least 3 days), bottled water (one gallon per person per day), first-aid supplies, medications, flashlight, batteries, whistle, sturdy shoes, and a dust mask.</li>
-            <li>**Be Aware of Warning Signs:** Look for signs of potential landslides like cracks in foundation walls, unusual water flow, or tilting trees. Monitor weather reports for heavy rain warnings.</li>
-            <li>**Clear Drainage Channels:** Keep drainage ditches and gutters around your home clear to prevent water buildup.</li>
-            <li>**Secure Loose Objects:** Secure outdoor furniture, grills, and other loose objects that could become projectiles during a landslide.</li>
-        </ul>
+        <!-- Add Content here-------------------------------------- -->
 
-        <h2>During a Landslide</h2>
-        <ul>
-            <li>**Follow Evacuation Orders Immediately:** If you are instructed to evacuate, leave immediately. Do not delay.</li>
-            <li>**Move Uphill:** If you can't evacuate, move uphill away from the path of the landslide and out of any valleys or low-lying areas.</li>
-            <li>**Stay Away from Windows and Doors:** Take shelter inside a sturdy building away from windows and doors.</li>
-            <li>**Drop to the Ground:** If you are caught outdoors, drop to the ground and cover your head and neck with your arms.</li>
-        </ul>
+        <body>
+          <h1>Landslide Preparedness Guide: Be Ready to Move!</h1>
 
-        <h2>After a Landslide</h2>
-            <ul>
-                <li>**Stay Away from the Water:** If you are in a drainage channel, stay away from the water to prevent water buildup.</li>
-                <li>**Stay Away from the Drainage Channels:** If you are in a drainage channel, stay away from the drainage channels to prevent water buildup.</li>
-                <li>**Stay Away from the Emergency Kit:** If you are in a drainage channel, stay away from the emergency kit to prevent water buildup.</li>
-                <li>**Stay Away from the Evacuation Plan:** If you are in a drainage channel, stay away from the evacuation plan to prevent water buildup.</li>
-            </ul>
-        <h2>Additional Resources</h2>
-        <div class="resources">
+          <div class="emergency-banner">
+            <h2>**Know Your Risk! Be Prepared for Landslides!**</h2>
+            <p>Heavy rains, earthquakes, or volcanic eruptions can trigger landslides. This guide helps you prepare and
+              take action to protect yourself and your family.</p>
+          </div>
+
+          <h2>Before a Landslide</h2>
+          <ul>
+            <li>**Know Your Risk:** Identify if you live in an area prone to landslides. Check with your local
+              authorities or a hazard map.</li>
+            <li>**Develop an Evacuation Plan:** Discuss escape routes and meeting locations with your family. Identify
+              potential shelters.</li>
+            <li>**Prepare an Emergency Kit:** Assemble an emergency kit with non-perishable food (enough for at least 3
+              days), bottled water (one gallon per person per day), first-aid supplies, medications, flashlight,
+              batteries, whistle, sturdy shoes, and a dust mask.</li>
+            <li>**Be Aware of Warning Signs:** Look for signs of potential landslides like cracks in foundation walls,
+              unusual water flow, or tilting trees. Monitor weather reports for heavy rain warnings.</li>
+            <li>**Clear Drainage Channels:** Keep drainage ditches and gutters around your home clear to prevent water
+              buildup.</li>
+            <li>**Secure Loose Objects:** Secure outdoor furniture, grills, and other loose objects that could become
+              projectiles during a landslide.</li>
+          </ul>
+
+          <h2>During a Landslide</h2>
+          <ul>
+            <li>**Follow Evacuation Orders Immediately:** If you are instructed to evacuate, leave immediately. Do not
+              delay.</li>
+            <li>**Move Uphill:** If you can't evacuate, move uphill away from the path of the landslide and out of any
+              valleys or low-lying areas.</li>
+            <li>**Stay Away from Windows and Doors:** Take shelter inside a sturdy building away from windows and doors.
+            </li>
+            <li>**Drop to the Ground:** If you are caught outdoors, drop to the ground and cover your head and neck with
+              your arms.</li>
+          </ul>
+
+          <h2>After a Landslide</h2>
+          <ul>
+            <li>**Stay Away from the Water:** If you are in a drainage channel, stay away from the water to prevent
+              water buildup.</li>
+            <li>**Stay Away from the Drainage Channels:** If you are in a drainage channel, stay away from the drainage
+              channels to prevent water buildup.</li>
+            <li>**Stay Away from the Emergency Kit:** If you are in a drainage channel, stay away from the emergency kit
+              to prevent water buildup.</li>
+            <li>**Stay Away from the Evacuation Plan:** If you are in a drainage channel, stay away from the evacuation
+              plan to prevent water buildup.</li>
+          </ul>
+          <h2>Additional Resources</h2>
+          <div class="resources">
             <p>For more information and resources on landslides:</p>
             <ul>
-                <li><a href="https://www.usgs.gov/programs/landslide-hazards">USGS Landslide Hazards</a></li>
-                <li><a href="https://community.fema.gov/ProtectiveActions/s/article/Landslide">Federal Emergency Management Agency (FEMA)</a></li>
-                <li><a href="https://www.nps.gov/articles/landslide-hazards.htm">National Park Service (NPS)</a></li>
+              <li><a href="https://www.usgs.gov/programs/landslide-hazards">USGS Landslide Hazards</a></li>
+              <li><a href="https://community.fema.gov/ProtectiveActions/s/article/Landslide">Federal Emergency
+                  Management Agency (FEMA)</a></li>
+              <li><a href="https://www.nps.gov/articles/landslide-hazards.htm">National Park Service (NPS)</a></li>
             </ul>
-        </div>
+          </div>
 
-    </section>
-  </main>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

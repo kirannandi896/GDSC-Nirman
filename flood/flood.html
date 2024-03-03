@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../img_assets/logo.png" type="image/icon type">
@@ -11,81 +12,92 @@
   <link href="flood.css" rel="stylesheet" type="text/css" />
   <title>Flood</title>
 </head>
-<body>
+
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+        </div>
       </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Flood!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
       </div>
-    <section class="main">
-    <h1>Flood Evacuation Guide</h1>
+      <div class="header">
+        <h1><span>Flood!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
+        <h1>Flood Evacuation Guide</h1>
 
-    <div class="emergency-banner">
-        <h2>Attention! Flood Warning in Effect!</h2>
-        <p>Please follow these guidelines to ensure your safety during the evacuation.</p>
-    </div>
+        <div class="emergency-banner">
+          <h2>Attention! Flood Warning in Effect!</h2>
+          <p>Please follow these guidelines to ensure your safety during the evacuation.</p>
+        </div>
 
-    <h2>What to Take With You</h2>
-    <ul class="checklist">
-        <li><b>Essentials:</b>  
+        <h2>What to Take With You</h2>
+        <ul class="checklist">
+          <li><b>Essentials:</b>
             <ul>
-                <li>Identification documents (ID, passport, etc.)</li>
-                <li>Medications (enough for at least 3 days)</li>
-                <li>Cash and credit cards</li>
-                <li>Cell phone and charger (portable charger if possible)</li>
+              <li>Identification documents (ID, passport, etc.)</li>
+              <li>Medications (enough for at least 3 days)</li>
+              <li>Cash and credit cards</li>
+              <li>Cell phone and charger (portable charger if possible)</li>
             </ul>
-        </li>
-        <li><b>Clothing and Supplies:</b>
+          </li>
+          <li><b>Clothing and Supplies:</b>
             <ul>
-                <li>Sturdy shoes and waterproof boots (if possible)</li>
-                <li>Change of clothes for several days</li>
-                <li>Blanket or sleeping bag</li>
-                <li>Flashlight and batteries</li>
-                <li>First-aid kit</li>
-                <li>Personal hygiene items</li>
+              <li>Sturdy shoes and waterproof boots (if possible)</li>
+              <li>Change of clothes for several days</li>
+              <li>Blanket or sleeping bag</li>
+              <li>Flashlight and batteries</li>
+              <li>First-aid kit</li>
+              <li>Personal hygiene items</li>
             </ul>
-        </li>
-        <li class="important"><b>Important Documents:</b> Copies of insurance policies, medical records, etc. (in a waterproof container)</li>
-        <li><b>For Pets:</b> Food, water, leash, crate (if available)</li>
-    </ul>
-
-    <h2>Important Information</h2>
-    <ul>
-        <li>Follow the instructions of local authorities.</li>
-        <li>Do not drive through flooded areas. "Turn Around, Don't Drown!"</li>
-        <li>Stay away from power lines and electrical equipment.</li>
-        <li>Listen to local news and emergency broadcasts for updates.</li>
-    </ul>
-
-    <h2>Additional Resources</h2>
-    <div class="resources">
-        <p>For more information and resources, please visit:</p>
-        <ul>
-            <li><a href="https://www.ready.gov/floods">Ready.gov: Floods</a></li>
-            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">American Red Cross: Flood Safety</a></li>
-            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">National Red Cross: Flood Safety</a></li>
+          </li>
+          <li class="important"><b>Important Documents:</b> Copies of insurance policies, medical records, etc. (in a
+            waterproof container)</li>
+          <li><b>For Pets:</b> Food, water, leash, crate (if available)</li>
         </ul>
-    </div>
-    </section>
-  </main>
+
+        <h2>Important Information</h2>
+        <ul>
+          <li>Follow the instructions of local authorities.</li>
+          <li>Do not drive through flooded areas. "Turn Around, Don't Drown!"</li>
+          <li>Stay away from power lines and electrical equipment.</li>
+          <li>Listen to local news and emergency broadcasts for updates.</li>
+        </ul>
+
+        <h2>Additional Resources</h2>
+        <div class="resources">
+          <p>For more information and resources, please visit:</p>
+          <ul>
+            <li><a href="https://www.ready.gov/floods">Ready.gov: Floods</a></li>
+            <li><a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">American
+                Red Cross: Flood Safety</a></li>
+            <li><a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">National
+                Red Cross: Flood Safety</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

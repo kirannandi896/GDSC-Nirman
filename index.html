@@ -12,79 +12,79 @@
   <meta name="theme-color" content="#000000">
 </head>
 
-<body>
+<body onload="myFunction()">
   <script src="script.js"></script>
-  <!-- Design and develop a solution for effectively
-  migrating people/villages, helping them adapt to
-  changes rapidly during natural/manmade
-  disasters. -->
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
-      </div>
-    </div>
-    <div class="logo">
-      <img src="img_assets/logo.png" width="60" height="60"></div>
-    <div class="header">
-      <h1><span>Disaster Relief!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
-    </div>
-    <section class="main">
-      <h2>Emergency Card:</h2>
-      <div class="emergency_holder">
-        <div class="emergency_card" id="flood" onclick="flood()">
-          <h2>Flood</h2>
-        </div>
-        <div class="emergency_card" id="earthq" onclick="earthq()">
-          <h2>Earthquake</h2>
-        </div>
-        <div class="emergency_card" id="tsunami" onclick="tsunami()">
-          <h2>Tsunami</h2>
-        </div>
-        <div class="emergency_card" id="wildfire" onclick="wildfire()">
-          <h2>Wildfire</h2>
-        </div>
-        <div class="emergency_card" id="hurricane" onclick="hurricane()">
-          <h2>Hurricane</h2>
-        </div>
-        <div class="emergency_card" id="drought" onclick="drought()">
-          <h2>Drought</h2>
-        </div>
-        <div class="emergency_card" id="tornado" onclick="tornado()">
-          <h2>Tornado</h2>
-        </div>
-        <div class="emergency_card" id="volcano" onclick="volcano()">
-          <h2>Volcano</h2>
-        </div>
-        <div class="emergency_card" id="accidents" onclick="accidents()">
-          <h2>Accidents</h2>
-        </div>
-        <div class="emergency_card" id="fire" onclick="fire()">
-          <h2>Fire</h2>
-        </div>
-        <div class="emergency_card" id="terrorist_atk" onclick="terrorist_atk()">
-          <h2>Terrorist Attack</h2>
-        </div>
-        <div class="emergency_card" id="landslides" onclick="landslides()">
-          <h2>Landslides</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
         </div>
       </div>
-      <div class="pandemic_card" id="pandemic" onclick="pandemic()">
-        <h2>Pandemic</h2>
+      <div class="logo">
+        <img src="img_assets/logo.png" width="60" height="60">
       </div>
-    </section>
-  </main>
+      <div class="header">
+        <h1><span>Disaster Relief !</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main" style="margin-top: -20px;">
+        <h2>Emergency Card:</h2>
+        <div class="emergency_holder">
+          <div class="emergency_card" id="flood" onclick="flood()">
+            <h2>Flood</h2>
+          </div>
+          <div class="emergency_card" id="earthq" onclick="earthq()">
+            <h2>Earthquake</h2>
+          </div>
+          <div class="emergency_card" id="tsunami" onclick="tsunami()">
+            <h2>Tsunami</h2>
+          </div>
+          <div class="emergency_card" id="wildfire" onclick="wildfire()">
+            <h2>Wildfire</h2>
+          </div>
+          <div class="emergency_card" id="hurricane" onclick="hurricane()">
+            <h2>Hurricane</h2>
+          </div>
+          <div class="emergency_card" id="drought" onclick="drought()">
+            <h2>Drought</h2>
+          </div>
+          <div class="emergency_card" id="tornado" onclick="tornado()">
+            <h2>Tornado</h2>
+          </div>
+          <div class="emergency_card" id="volcano" onclick="volcano()">
+            <h2>Volcano</h2>
+          </div>
+          <div class="emergency_card" id="accidents" onclick="accidents()">
+            <h2>Accidents</h2>
+          </div>
+          <div class="emergency_card" id="fire" onclick="fire()">
+            <h2>Fire</h2>
+          </div>
+          <div class="emergency_card" id="terrorist_atk" onclick="terrorist_atk()">
+            <h2>Terrorist Attack</h2>
+          </div>
+          <div class="emergency_card" id="landslides" onclick="landslides()">
+            <h2>Landslides</h2>
+          </div>
+        </div>
+        <div class="pandemic_card" id="pandemic" onclick="pandemic()">
+          <h2>Pandemic</h2>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 
 </html>

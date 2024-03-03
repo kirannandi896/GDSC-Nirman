@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="../img_assets/logo.png" type="image/icon type">
@@ -11,80 +12,100 @@
   <link href="hurricane.css" rel="stylesheet" type="text/css" />
   <title>Hurricane</title>
 </head>
-<body>
+
+<body onload="myFunction()">
   <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+  <div id="loader"></div>
+  <div style="display:none;" id="html" class="animate-bottom">
+    <header>
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
+          <h2 onclick="calpol()">Police - 100</h2>
+          <h2 onclick="calfire()">Fire - 101</h2>
+          <h2 onclick="calamb()">Ambulance - 102</h2>
+          <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
+        </div>
       </div>
-    </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Hurricane!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
+      <div class="back">
+        <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()"
+          style="float:left;cursor:pointer;filter:invert(1)">
       </div>
-    <section class="main">
+      <div class="header">
+        <h1><span>Hurricane!</span></h1>
+      </div>
+      <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img
+          src="../img_assets/emergencylogo.png" alt="Emergency" width="50" height="50"></span>
+    </header>
+    <main>
+      <div class="image_holder">
+      </div>
+      <section class="main">
 
-<!-- Add Content here-------------------------------------- -->
+        <!-- Add Content here-------------------------------------- -->
 
-      <h1>Hurricane Preparedness Guide</h1>
+        <h1>Hurricane Preparedness Guide</h1>
 
-      <div class="emergency-banner">
+        <div class="emergency-banner">
           <h2>**Attention! Hurricane Warning in Effect!**</h2>
           <p>A hurricane may be approaching your area. Be prepared to evacuate or take shelter.</p>
-      </div>
+        </div>
 
-      <h2>Before a Hurricane</h2>
-      <ul class="checklist">
-          <li>**Develop a Hurricane Plan:** Discuss evacuation plans, shelter locations, and communication strategies with your family.</li>
-          <li>**Know Your Evacuation Zone:** Identify your evacuation zone and have a plan for leaving quickly if necessary.</li>
-          <li>**Assemble an Emergency Kit:** Prepare an emergency kit with non-perishable food (enough for at least 3 days), bottled water (one gallon per person per day), first-aid supplies, medications, flashlight, batteries, battery-powered radio, and sanitation supplies.</li>
-          <li>**Secure Your Home:** Board up windows with plywood or hurricane shutters. Secure loose outdoor furniture and bring in any decorations or items that could become projectiles in high winds.</li>
+        <h2>Before a Hurricane</h2>
+        <ul class="checklist">
+          <li>**Develop a Hurricane Plan:** Discuss evacuation plans, shelter locations, and communication strategies
+            with your family.</li>
+          <li>**Know Your Evacuation Zone:** Identify your evacuation zone and have a plan for leaving quickly if
+            necessary.</li>
+          <li>**Assemble an Emergency Kit:** Prepare an emergency kit with non-perishable food (enough for at least 3
+            days), bottled water (one gallon per person per day), first-aid supplies, medications, flashlight,
+            batteries, battery-powered radio, and sanitation supplies.</li>
+          <li>**Secure Your Home:** Board up windows with plywood or hurricane shutters. Secure loose outdoor furniture
+            and bring in any decorations or items that could become projectiles in high winds.</li>
           <li>**Fill Your Car's Gas Tank:** Ensure your car has a full gas tank in case you need to evacuate.</li>
           <li>**Stay Informed:** Monitor weather reports and warnings from local authorities.</li>
-      </ul>
+        </ul>
 
-      <h2>During a Hurricane</h2>
-      <ul class="checklist">
+        <h2>During a Hurricane</h2>
+        <ul class="checklist">
           <li>**Follow Evacuation Orders:** If you are instructed to evacuate, leave immediately. Do not delay.</li>
-          <li>**Stay Indoors:** If you are not evacuating, stay indoors on the lowest floor in an interior room away from windows and doors.</li>
-          <li>**Stay Away from Windows:** Flying debris can cause serious injury. Do not go outside to look at the storm.</li>
+          <li>**Stay Indoors:** If you are not evacuating, stay indoors on the lowest floor in an interior room away
+            from windows and doors.</li>
+          <li>**Stay Away from Windows:** Flying debris can cause serious injury. Do not go outside to look at the
+            storm.</li>
           <li>**Turn Off Utilities:** If safe to do so, turn off gas, water, and electricity at the main valves.</li>
-          <li>**Listen to Local Authorities:** Stay informed about the situation and follow instructions from emergency personnel.</li>
-      </ul>
+          <li>**Listen to Local Authorities:** Stay informed about the situation and follow instructions from emergency
+            personnel.</li>
+        </ul>
 
-      <h2>After a Hurricane</h2>
-      <ul class="checklist">
-          <li>**Stay Away from Downed Power Lines:** Downed power lines can be extremely dangerous. Do not touch them.</li>
+        <h2>After a Hurricane</h2>
+        <ul class="checklist">
+          <li>**Stay Away from Downed Power Lines:** Downed power lines can be extremely dangerous. Do not touch them.
+          </li>
           <li>**Be Aware of Carbon Monoxide Poisoning:** Only use generators outdoors and away from windows.</li>
           <li>**Check for Injuries:** Attend to yourself and others who may be injured.</li>
           <li>**Call for Help:** If you are in a building, call for help immediately.</li>
-          <li>**Check for Damage:** Assess the damage to your home and surroundings. Do not enter a building if you are unsure of the damage.</li>
-      </ul>
-      <h2>Additional Resources</h2>
-      <div class="resources">
+          <li>**Check for Damage:** Assess the damage to your home and surroundings. Do not enter a building if you are
+            unsure of the damage.</li>
+        </ul>
+        <h2>Additional Resources</h2>
+        <div class="resources">
           <p>For more information and resources, please visit:</p>
           <ul>
-              <li><a href="https://www.usgs.gov/hurricanes">USGS Hurricane Information</a> - U.S. Geological Survey</li>
-              <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-a-hurricane/hurricane-safety-preparedness.html">Red Cross Hurricane Safety Preparedness</a> - Red Cross</li>
-              <li><a href="https://www.seismology.org/seismology/seismology-basics/hurricane-safety-preparedness.html">Seismology Hurricane Safety Preparedness</a> - Seismology</li>
+            <li><a href="https://www.usgs.gov/hurricanes">USGS Hurricane Information</a> - U.S. Geological Survey</li>
+            <li><a
+                href="https://www.redcross.org/get-help/how-to-prepare-for-a-hurricane/hurricane-safety-preparedness.html">Red
+                Cross Hurricane Safety Preparedness</a> - Red Cross</li>
+            <li><a
+                href="https://www.seismology.org/seismology/seismology-basics/hurricane-safety-preparedness.html">Seismology
+                Hurricane Safety Preparedness</a> - Seismology</li>
           </ul>
-      </div>
-      
-    </section>
-  </main>
+        </div>
+
+      </section>
+    </main>
+  </div>
 </body>
+
 </html>

@@ -1,3 +1,14 @@
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("html").style.display = "block";
+}
+
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
