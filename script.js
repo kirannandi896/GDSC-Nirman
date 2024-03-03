@@ -17,6 +17,9 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+function openmap(){
+  window.open("https://maps.google.com/","_blank");
+}
   
 function calpol(){
     if(confirm("Are you sure you want to call police?")){
