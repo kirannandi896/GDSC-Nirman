@@ -1,106 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="../style.css" rel="stylesheet" type="text/css" />
-  <link href="flood.css" rel="stylesheet" type="text/css" />
-  <title>Flood</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Evacuation Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .emergency-banner {
+            background-color: #f8d7da;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+        }
+
+        .emergency-banner h2 {
+            color: red;
+        }
+
+        .checklist {
+            list-style: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+        }
+
+        .important {
+            font-weight: bold;
+            color: #e84118; /* Reddish color for important items */
+        }
+
+        .resources {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 20px;
+        }
+
+        .resources a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .resources a:hover { /* Add hover effect for links */
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <script src="../script.js"></script>
-  <header>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="overlay-content">
-        <img src="../img_assets/ecall.png" alt="Emergency Call" width="150" height="150">
-        <h2 onclick="calpol()">Police - 100</h2>
-        <h2 onclick="calfire()">Fire - 101</h2>
-        <h2 onclick="calamb()">Ambulance - 102</h2>
-        <h2 onclick="caldcu()">Disaster Control Unit - 108</h2>
-      </div>
+    <h1>Flood Evacuation Guide</h1>
+
+    <div class="emergency-banner">
+        <h2>**Attention! Flood Warning in Effect!**</h2>
+        <p>Please follow these guidelines to ensure your safety during the evacuation.</p>
     </div>
-    <div class="back">
-      <img src="../img_assets/back.png" alt="Back" width="50" height="50" onclick="history.back()" style="float:left;cursor:pointer;filter:invert(1)">
-    </div>
-    <div class="header">
-      <h1><span>Flood!</span></h1>
-    </div>
-    <span class="nav" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="../img_assets/emergencylogo.png"
-        alt="Emergency" width="50" height="50"></span>
-  </header>
-  <main>
-    <div class="image_holder">
-      </div>
-    <section class="main">
-  <h1>Flood</h1>
-  <br><br><br>
-      <h2>Safety and Control Measures During Floods:</h2>
-      <br>
-      <h3>A] Before a Flood:</h3>
-      <br><br>
-  <ul>
-       <li><b> Stay informed:</b> Monitor weather reports and listen to local authorities for flood warnings and instructions.</li>
-    <br>
-      <li><b>Prepare your home:</b>
-        <br><br>
-        <ul>
-          <li>Elevate important belongings and furniture to higher levels.</li>
-          <li>Seal basements and crawlspaces to prevent water intrusion.</li>
-          <li>Install check valves in sewer drains to prevent backflow.</li>
-          <li>Sandbag low-lying doorways and openings.</li>
-          <li>Prepare an emergency kit with essentials like food, water, first-aid supplies, medications, flashlight, and battery-powered radio.</li>
-        </ul>
-      </li>
-    <br>
-      <li><b>Develop an evacuation plan:</b>
-        <br><br>
-        <ul>
-          <li>Identify evacuation routes and designated shelters.</li>
-          <li>Practice your evacuation plan with your family, including pets, and agree on a meeting location in case you get separated.</li>
-        </ul>
-  </ul>
-      <br><br>
-      <h3>B] During a Flood:</h3>
-      <br><br>
-    <ul>
-      <li>Evacuate immediately if instructed to do so by authorities or if your home is in danger of flooding.</li>
-      <li><b>Do not drive through flooded areas:</b> Six inches of moving water can knock you off your feet. Use designated evacuation routes and shelters.</li>
-      <li><b>Stay away from power lines and electrical equipment:</b> Floodwater can conduct electricity, posing a serious danger.</li>
-      <li>Turn off utilities at the main switch if you evacuate and only if it is safe to do so.</li>
-      <li><b>Stay on higher ground:</b> If you cannot evacuate, move to upper floors or the roof and wait for rescue.</li>
+
+    <h2>What to Take With You</h2>
+    <ul class="checklist">
+        <li>**Essentials:**  
+            <ul>
+                <li>Identification documents (ID, passport, etc.)</li>
+                <li>Medications (enough for at least 3 days)</li>
+                <li>Cash and credit cards</li>
+                <li>Cell phone and charger (portable charger if possible)</li>
+            </ul>
+        </li>
+        <li>**Clothing and Supplies:**
+            <ul>
+                <li>Sturdy shoes and waterproof boots (if possible)</li>
+                <li>Change of clothes for several days</li>
+                <li>Blanket or sleeping bag</li>
+                <li>Flashlight and batteries</li>
+                <li>First-aid kit</li>
+                <li>Personal hygiene items</li>
+            </ul>
+        </li>
+        <li class="important">**Important Documents:** Copies of insurance policies, medical records, etc. (in a waterproof container)</li>
+        <li>**For Pets:** Food, water, leash, crate (if available)</li>
     </ul>
-      <br><br>
-      <h3>C] After a Flood:</h3>
-      <br><br>
-      <ul>
-        <li>Wait for the water to recede completely before returning home.</li>
-        <li><b>Be cautious of damaged structures:</b> Buildings and foundations may be weakened by floodwaters.</li>
-        <li><b>Beware of electrical hazards:</b> Do not touch electrical equipment until it has been inspected by a qualified professional.</li>
-      <li> <b>Report broken gas lines:</b> Do not attempt to turn off the gas yourself.</li>
-        <li><b>Document the damage:</b> Take pictures and videos of the damage for insurance purposes.</li>
-        <li><b>Contact your insurance company:</b> File a claim to start the recovery process.</li>
-        <li><b>Be aware of potential health risks:</b> Floodwater can be contaminated with sewage and other pollutants. Wear protective clothing and boots when cleaning up and avoid contact with floodwater.</li>
-      </ul>
-      <br><br>
-      <h3>D] Additional Control Measures:</h3>
-      <br><br>
-      <ul>
-        <li><b>Community-level measures:</b>
-          <ul>
-            <li>Implement flood control measures like levees, flood walls, and channel improvements.</li>
-            <li>Maintain drainage systems and clear debris from waterways.</li>
-            <li>Promote sustainable land management practices to reduce soil erosion and runoff.</li>
-          </ul>
-          <br>
-      <li><b>Individual preparedness:</b>
-          <li>Purchase flood insurance, especially if you live in a flood-prone area.</li>
-          <li>Consider waterproofing your basement or crawlspace.</li>
-      <li>Install flood detection and alarm systems.
-      </li>
-      </ul>
-    </section>
-  </main>
-  
-</body>
-</html>
+
+    <h2>Important Information</h2>
+    <ul>
+        <li>Follow the instructions of local authorities.</li>
+        <li>Do not drive through flooded areas. "Turn Around, Don't Drown!"</li>
+        <li>Stay away from power lines and electrical equipment.</li>
+        <li>Listen to local news and emergency broadcasts for updates.</li>
+    </ul>
+
+    <h2>Additional Resources</h2>
+    <div class="resources">
+        <p>For more information and resources, please visit:</p>
+        <ul>
+            <li><a href="https://www.ready.gov/floods">Ready.gov: Floods</a></li>
+            <li><a href="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/flood.html">American Red Cross: Flood Safety</a></li>

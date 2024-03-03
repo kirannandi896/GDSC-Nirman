@@ -228,6 +228,62 @@ button:hover {
   }
 }
 
+h1 {
+  text-align: center;
+  color: #e84118;
+  /* Reddish color for wildfire */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.emergency-banner {
+  background-color: #ee8c94;
+  /* Light yellow background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #0b0a0a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow effect */
+}
+
+.emergency-banner h2 {
+  color: red;
+}
+
+.checklist {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.checklist li {
+  margin-bottom: 10px;
+}
+
+.important {
+  font-weight: bold;
+  color: #e84118;
+  /* Reddish color for important items */
+}
+
+.resources {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.resources a {
+  color: #e84118;
+  /* Reddish color for links */
+  text-decoration: none;
+}
+
+.resources a:hover {
+  /* Add hover effect for links */
+  text-decoration: underline;
+}
+
 
 /* Disasters -------------------------------------------------- */
 
@@ -395,8 +451,21 @@ button:hover {
   filter: brightness(1);
 }
 
-@media only screen and (max-width: 830px){
-  #flood,#earthq,#tsunami,#wildfire,#hurricane,#drought,#tornado,#volcano,#accidents,#fire,#terrorist_atk,#landslides,#pandemic{
+@media only screen and (max-width: 830px) {
+
+  #flood,
+  #earthq,
+  #tsunami,
+  #wildfire,
+  #hurricane,
+  #drought,
+  #tornado,
+  #volcano,
+  #accidents,
+  #fire,
+  #terrorist_atk,
+  #landslides,
+  #pandemic {
     filter: brightness(1);
   }
 }
