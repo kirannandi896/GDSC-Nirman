@@ -223,8 +223,11 @@ button:hover {
   }
 
   header {
-    font-size: 80%;
-    padding: 2rem 3%;
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4%;
   }
 
   .emergency_card {
