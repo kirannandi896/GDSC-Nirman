@@ -26,6 +26,13 @@ html {
   overflow-x: hidden;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -216,6 +223,7 @@ button:hover {
   }
 
   header {
+    font-size: 80%;
     padding: 2rem 3%;
   }
 
@@ -240,10 +248,11 @@ h1 {
   background-color: #ee8c94;
   /* Light yellow background */
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   color: #0b0a0a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
   /* Subtle shadow effect */
 }
 
@@ -252,7 +261,7 @@ h1 {
 }
 
 .checklist {
-  list-style: disc;
+  list-style: none;
   padding-left: 20px;
   margin-bottom: 20px;
 }
@@ -283,6 +292,33 @@ h1 {
   /* Add hover effect for links */
   text-decoration: underline;
 }
+
+ul{
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 0.5rem rgb(238, 237, 237);
+  margin: 20px;
+  transition: .3s linear;
+  margin-top: 30px;
+}
+
+ul:hover{
+  box-shadow: 0 0 0.5rem rgb(238, 237, 237);
+  transform: scale(1.01);
+}
+
+@media only screen and (max-width: 830px){
+  ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 40px;
+  }
+}
+
+
 
 
 /* Disasters -------------------------------------------------- */
