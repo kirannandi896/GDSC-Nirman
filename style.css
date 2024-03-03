@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: Poppins;
+  transition: all 4s ease-in-out;
+}
+
+:root {
+  --bgcolor: rgb(0, 0, 0);
+  --bgcolor2: rgb(0, 0, 0);
+  --textcolor: rgb(255, 199, 199);
+  --dec-color: #9cb0a6;
+  --primary: #ff822e;
+  --secondary: #5D6BF8;
+  --third: #f975da;
+}
+
+
+html {
+  font: 65%;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 1rem 9%;
+  background: #0a0a0a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  box-shadow: 0 0 0.5rem rgb(0, 0, 0);
+}
+
+span {
+  color: rgb(203, 0, 253);
+  font-weight: bold;
+}
+
+body {
+  background: var(--bgcolor);
+  color: var(--textcolor);
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay h2 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay h2:hover,
+.overlay h2:focus {
+  cursor: pointer;
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay h2 {
+    font-size: 1vw;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.nav {
+  float: right;
+  margin-top: 7px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 9rem 7% 2rem;
+}
+
+.emergency_holder {
+  justify-content: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  gap: 15px;
+}
+
+.emergency_card {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(25deg, var(--primary), var(--secondary));
+  border-radius: 15px 50px;
+  padding: 30px 20px;
+  width: 300px;
+  height: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  transition: .4s linear;
+}
+
+.emergency_card:hover {
+  cursor: pointer;
+  box-shadow: 0 30px 15px #2a2828;
+  transform: scale(1.03);
+}
+
+.emergency_card h2,
+.pandemic_card h2 {
+  font-size: 1.5rem;
+  color: var(--textcolor);
+  font-weight: 650;
+  background: linear-gradient(25deg, var(--primary), var(--secondary));
+  margin-bottom: 10%;
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 50px;
+  margin-left: -30px;
+  float: left;
+  border-top-right-radius: 90px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.emergency_card h2:hover,
+.pandemic_card h2:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.emergency_button {
+  float: right;
+}
+
+.image_holder {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(img_assets/disaster.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: brightness(0.5);
+}
+
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(45deg, #02b3ff 0%, #f975da 80%);
+  border-radius: 4rem;
+  box-shadow: 0 0 0.3rem 0.01rem var(--primary);
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  transition-property: all;
+  transition-duration: 0.6s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #f975da 0%, #02b3ff 80%);
+  box-shadow: 0 0 0.3rem 0.01rem #0a0000;
+  border: 2px solid #00fbffAA;
+}
+
+@media only screen and (max-width: 830px) {
+
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  header {
+    padding: 2rem 3%;
+  }
+
+  .emergency_card {
+    width: 100%;
+  }
+
+  .emegency_holder {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+
+/* Disasters -------------------------------------------------- */
+
+
+#flood {
+  background: url(img_assets/flood.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#flood:hover {
+  filter: brightness(1);
+}
+
+#earthq {
+  background: url(img_assets/earthq.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#earthq:hover {
+  filter: brightness(1);
+}
+
+#tsunami {
+  background: url(img_assets/tsunami.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#tsunami:hover {
+  filter: brightness(1);
+}
+
+#wildfire {
+  background: url(img_assets/wildfire.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#wildfire:hover {
+  filter: brightness(1);
+}
+
+#hurricane {
+  background: url(img_assets/hurricane.png);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#hurricane:hover {
+  filter: brightness(1);
+}
+
+#drought {
+  background: url(img_assets/drought.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#drought:hover {
+  filter: brightness(1);
+}
+
+#tornado {
+  background: url(img_assets/tornado.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#tornado:hover {
+  filter: brightness(1);
+}
+
+#volcano {
+  background: url(img_assets/volcano.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#volcano:hover {
+  filter: brightness(1);
+}
+
+#accidents {
+  background: url(img_assets/accidents.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#accidents:hover {
+  filter: brightness(1);
+}
+
+#fire {
+  background: url(img_assets/fire.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#fire:hover {
+  filter: brightness(1);
+}
+
+#terrorist_atk {
+  background: url(img_assets/terrorist_atk.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#terrorist_atk:hover {
+  filter: brightness(1);
+}
+
+#landslides {
+  background: url(img_assets/landslides.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#landslides:hover {
+  filter: brightness(1);
+}
+
+.pandemic_card {
+  display: inline-flexbox;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(25deg, var(--primary), var(--secondary));
+  border-radius: 15px 50px;
+  padding: 30px 20px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  transition: .4s linear;
+}
+
+.pandemic_card:hover {
+  cursor: pointer;
+  box-shadow: 0 30px 15px #2a2828;
+  transform: scale(1.03);
+}
+
+#pandemic {
+  background: url(img_assets/pandemic.webp);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.7);
+}
+
+#pandemic:hover {
+  filter: brightness(1);
+}
+
+@media only screen and (max-width: 830px){
+  #flood,#earthq,#tsunami,#wildfire,#hurricane,#drought,#tornado,#volcano,#accidents,#fire,#terrorist_atk,#landslides,#pandemic{
+    filter: brightness(1);
+  }
+}
