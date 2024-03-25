@@ -604,6 +604,17 @@ ul:hover {
   filter: brightness(1);
 }
 
+.footer{
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 0.35cm;
+}
+.footer a{
+  color: #fff;
+}
+
 @media only screen and (max-width: 830px) {
 
   #flood,
